@@ -6,3 +6,5 @@ export * from "./templates";
 export * from "./logos";
 export * from "./flag";
 export * from "./pix-credit-card";
+export * from "./pix";
+export * from "./credit-card";
