@@ -43,6 +43,7 @@ export const typography = {
   body1: {
     fontSize: fontSize.md,
     fontWeight: fontWeight.bold,
+    color: palette.neutral.dark,
   },
   body2: {
     fontSize: fontSize.md,
@@ -59,7 +60,7 @@ export const typography = {
     fontFamily,
     lineHeight: lineHeight.short,
     fontSize: fontSize.md,
-    "@media(max-width:500px)": {
+    "@media (max-width:500px)": {
       fontSize: fontSize.xs,
     },
   },
