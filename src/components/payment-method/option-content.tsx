@@ -17,13 +17,15 @@ export const OptionContent: FC<PixI> = ({
         textAlign="left"
         color="neutral.dark"
       >
-        {`${installment}x`}
+        {`${installment}x `}
         <span style={{ fontWeight: fontWeight.regular }}>{amount}</span>
       </Typography>
       {total && (
-        <Typography textAlign="left" variant="body2" color="neutral.main">
-          {`Total: ${total}`}
-        </Typography>
+        <Typography
+          textAlign="left"
+          variant="body2"
+          color="neutral.main"
+        >{`Total: ${total}`}</Typography>
       )}
       {cashback && (
         <Typography
@@ -33,7 +35,9 @@ export const OptionContent: FC<PixI> = ({
           textAlign="left"
         >
           Ganhe
-          <span style={{ fontWeight: fontWeight.bold }}>{` ${cashback}%`}</span>
+          <span
+            style={{ fontWeight: fontWeight.bold }}
+          >{` ${cashback}% `}</span>
           de Cashback
         </Typography>
       )}

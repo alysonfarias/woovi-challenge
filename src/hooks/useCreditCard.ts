@@ -6,7 +6,6 @@ import { maskExpiration } from "../utils/masks";
 
 export const useCreditCard = () => {
   let navigate = useNavigate();
-
   const { fields } = crediCardStore.getState();
 
   const [maskedCpf, setMaskedCpf] = useState("");
@@ -19,7 +18,7 @@ export const useCreditCard = () => {
 
   const handleInputChange = (event: EventType, key: KeyTypes) => {
     setIsValidate(false);
-    fields[key] = event?.target.value;
+    fields[key] = event.target.value;
   };
 
   const handleCpfChange = (event: EventType) => {

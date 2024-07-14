@@ -22,17 +22,17 @@ export const Flag: FC<DivAttributes> = (props) => {
         <Typography variant="tag" color="white" display="block" ml={1.5}>
           {props.children}
         </Typography>
+        <Box
+          bgcolor="white"
+          height="2rem"
+          width="2rem"
+          borderRadius={1}
+          marginRight={-3.2}
+          sx={{
+            transform: "rotate(45deg)",
+          }}
+        />
       </Stack>
-      <Box
-        bg-color="white"
-        height="2rem"
-        width="2rem"
-        borderRadius={1}
-        marginRight={-3.2}
-        sx={{
-          transform: "rotate(45deg)",
-        }}
-      ></Box>
     </Stack>
   );
 };
