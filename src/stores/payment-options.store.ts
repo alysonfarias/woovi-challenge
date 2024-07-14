@@ -1,4 +1,4 @@
-import { createStore } from "./index";
+import { createStore } from ".";
 import { PIX_OPTIONS as paymentOptions } from "../helpers";
 import { PixOptionsType } from "../interfaces";
 import { formatCurrency } from "../utils";
@@ -17,3 +17,7 @@ export const paymentOptionsStore = createStore({
   options: formattedOptions,
   selectedOption: formattedOptions[1],
 });
+
+export type ValuesPaymentOptionsStore = ReturnType<
+  typeof paymentOptionsStore.getState
+>;
