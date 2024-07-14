@@ -6,7 +6,7 @@ const formattedDate = formatDate(new Date());
 export const pixCreditCardStore = createStore({
   code: "qr-code.svg",
   dueDate: formattedDate,
-  identifier: "3c1a951c356c3444p55ba1c9fc123c48",
+  identifier: "2c1b951f356c4680b13ba1c9fc889c47",
 });
 
 export type ValuesPixStore = ReturnType<typeof pixCreditCardStore.getState>;
